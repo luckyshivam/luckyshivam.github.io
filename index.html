@@ -57,7 +57,7 @@
     console.log('Welcome!  Fetching your information.... ');
     FB.api('/me', function(response) {
       console.log('Successful login for: ' + response.name);
-      document.getElementById('status').innerHTML = '< a href="'+ login.html +'"> continue with facebook login </a>';
+      document.getElementById('status').innerHTML = '<p> welcome'+response.name+'! <a href=login.html?name='response.name+'>continue</a></p>;
     });
   }
 
