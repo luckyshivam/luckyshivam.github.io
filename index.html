@@ -6,7 +6,7 @@
 
         <body>    <!-- The JS SDK Login Button -->
             <div id="fb-root"></div>
-<script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v11.0&appId=476503736753362&autoLogAppEvents=1" nonce="WCbQvau9"></script>
+<script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v11.0&appId=476503736753362&autoLogAppEvents=1" nonce="E1XqLFBi"></script>
         <div class="login-box">
          <div class="left-box">
              <h1>Sign Up</h1>
@@ -18,15 +18,16 @@
             </div>
              <div class = "right-box">
                 <span class="right-title"> Sign Up With <br> Social Network</span>
-                <div class="fb-login-button" data-width="" data-size="medium" data-button-type="login_with" data-layout="default" data-auto-logout-link="false" data-use-continue-as="false"></div>
-<script>
+                <div class="social facebook" data-width="" data-size="medium" data-button-type="login_with" data-layout="default" data-auto-logout-link="false" data-use-continue-as="false"></div>
+                <script>
+
   function statusChangeCallback(response) {  // Called with the results from FB.getLoginStatus().
     console.log('statusChangeCallback');
     console.log(response);                   // The current login status of the person.
     if (response.status === 'connected') {   // Logged into your webpage and Facebook.
       testAPI();  
     } else {                                 // Not logged into your webpage or we are unable to tell.
-      document.getElementById('status').innerHTML;
+      document.getElementById('status').innerHTML= <p> "not logged in"</p>;
     }
   }
 
@@ -56,7 +57,7 @@
     console.log('Welcome!  Fetching your information.... ');
     FB.api('/me', function(response) {
       console.log('Successful login for: ' + response.name);
-      document.getElementById('status').innerHTML = 'Thanks for logging in, ' + response.name + response.email+ '!';;
+      document.getElementById('status').innerHTML = '< a href="'+ login.html +'"> continue with facebook login </a>';
     });
   }
 
