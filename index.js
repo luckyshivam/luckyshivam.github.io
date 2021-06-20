@@ -65,7 +65,7 @@ function statusChangeCallback(response) {  // Called with the results from FB.ge
             
             document.getElementById('response.name').style.display='block';
   }
-);
+
            // FB.api('/me', function (response) {
              //   console.log('Successful login for: ' + response.name);
                // document.getElementById('status').innerHTML = '<a href="login.html">login</a>';
