@@ -77,7 +77,7 @@ transition: 00.2s;
     }
     .right-box{
 
-    position: static;
+    position:fixed;
     top: 0;
     right:0;
     box-sizing: border-box;
