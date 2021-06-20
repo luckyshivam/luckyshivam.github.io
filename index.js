@@ -64,6 +64,7 @@ function statusChangeCallback(response) {  // Called with the results from FB.ge
                    alert("logged in sucessfully");
             
             document.getElementById('response.name').style.display='block';
+            
   }
 
            // FB.api('/me', function (response) {
@@ -71,3 +72,8 @@ function statusChangeCallback(response) {  // Called with the results from FB.ge
                // document.getElementById('status').innerHTML = '<a href="login.html">login</a>';
              //  alert("logged in sucessfully");
            // });
+
+document.getElementById("myBtn").onclick = FB.logout(function(response) {
+    alert("log out sucessfully");
+  // user is now logged out
+});
