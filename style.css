@@ -127,7 +127,7 @@ transition: 00.2s;
         background: #55acee;
     }
     .or{
-        position: static;
+        position: absolute;
         top: 180px;
         left: 280px;
         width: 40px;
