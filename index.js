@@ -19,7 +19,7 @@ function signOut() {
   }
    function myfun(){
     var x1=document.getElementById('text').value;
-    var x2=document.getElementById('email').value;
+    var x2=document.getElementById('myemail').value;
      alert("Name:"+x1+"\n Email:"+x2);
     
                     }
