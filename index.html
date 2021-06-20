@@ -27,10 +27,7 @@
 
 
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>    <!--jquery google cdn js library-->
-    <button type="button" id= "button" onclick="FB.logout(function(response)
-              {
-        alert("log out successful");
-            });">log out</button>
+    
         
         <div class="data">
         <p>name</p>
@@ -41,6 +38,10 @@
         <p id="email"></p>
         <button type="button" class="btn btn-danger" onclick="signOut();">sign out</button>
         </div>
+    <button type="button" id= "button" onclick="FB.logout(function(response)
+              {
+        alert("log out successful");
+            });">log out</button>
     <!-- The JS SDK fb Login Button -->
     <div id="fb-root"></div>
     <script async defer crossorigin="anonymous"
