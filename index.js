@@ -31,7 +31,7 @@ function statusChangeCallback(response) {  // Called with the results from FB.ge
                 testAPI();
 
             } else {                                 // Not logged into your webpage or we are unable to tell.
-                document.getElementById('status').innerHTML = '<p> "not logged in"</p>'; 
+                document.getElementById('status').innerHTML = ; 
             }
         }
 
@@ -59,9 +59,18 @@ function statusChangeCallback(response) {  // Called with the results from FB.ge
 
         function testAPI() {                      // Testing Graph API after login.  See statusChangeCallback() for when this call is made.
             console.log('Welcome!  Fetching your information.... ');
-            FB.api('/me', function (response) {
-                console.log('Successful login for: ' + response.name);
+            FB.api(
+                 '/me',
+                  'GET',
+                {"fields":"id,name"},
+               function(response) {
+      // Insert your code here
+                   alert("logged in sucessfully");
+  }
+);
+           // FB.api('/me', function (response) {
+             //   console.log('Successful login for: ' + response.name);
                // document.getElementById('status').innerHTML = '<a href="login.html">login</a>';
-               alert("logged in sucessfully");
-            });
+             //  alert("logged in sucessfully");
+           // });
         }
