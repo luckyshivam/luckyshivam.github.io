@@ -31,7 +31,7 @@ function statusChangeCallback(response) {  // Called with the results from FB.ge
                 testAPI();
 
             } else {                                 // Not logged into your webpage or we are unable to tell.
-                document.getElementById('status').innerHTML = <p> "not logged in"</p>; 
+                document.getElementById('status').innerHTML = '<p> "not logged in"</p>'; 
             }
         }
 
