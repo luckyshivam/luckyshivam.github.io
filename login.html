@@ -8,6 +8,13 @@
       console.log('Successful login for: ' + response.name);
       document.getElementById('status').innerHTML =' + response.name +' ;
     });
+                window.fbAsyncInit = function() {
+    FB.init({
+      appId      : '476503736753362',
+      cookie     : false,                     // Enable cookies to allow the server to access the session.
+      xfbml      : true,                     // Parse social plugins on this webpage.
+      version    : 'v2.0'           // Use this Graph API version for this call.
+    });
                  
 
         </script>
