@@ -75,8 +75,8 @@ function statusChangeCallback(response) {  // Called with the results from FB.ge
            // });
         }
 
-function FB.logout(function(response){
-                                                           
-                                                           alert("log out successful");
-                                                              
-         });
+function logout(){
+    FB.logout(function(response)
+              {
+        alert("log out successful");
+            });
