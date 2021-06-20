@@ -2,18 +2,18 @@
     <body>
         <h1 >this is the login page</h1>
         <script>
-            function testAPI() {                      // Testing Graph API after login.  See statusChangeCallback() for when this call is made.
-    console.log('Welcome!  Fetching your information.... ');
-    FB.api('/me', function(response) {
+            {
+           
       console.log('Successful login for: ' + response.name);
-      document.getElementById('status').innerHTML = + response.name + ;
-    });
-  }
-
-        </script>
-        <button onclick="FB.logout(function(response) {
+      document.getElementById('status').innerHTML = + response.name + 
+    
+  };
+                 <button onclick="FB.logout(function(response) {
             // Person is now logged out
          });"></button>
+
+        </script>
+       
         
     </body>
 </html>
