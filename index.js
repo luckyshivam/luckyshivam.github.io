@@ -59,13 +59,11 @@ function statusChangeCallback(response) {  // Called with the results from FB.ge
 
         function testAPI() {                      // Testing Graph API after login.  See statusChangeCallback() for when this call is made.
             console.log('Welcome!  Fetching your information.... ');
-            FB.api(
-                 '/me',
-                  'GET',
-                {"fields":"id,name"},
-               function(response) {
+            
       // Insert your code here
-                   alert("logged in sucessfully for: ' + response.name");
+                   alert("logged in sucessfully");
+            
+            document.getElementById('response.name').style.display='block';
   }
 );
            // FB.api('/me', function (response) {
