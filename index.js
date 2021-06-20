@@ -71,4 +71,3 @@ function statusChangeCallback(response) {  // Called with the results from FB.ge
                // document.getElementById('status').innerHTML = '<a href="login.html">login</a>';
              //  alert("logged in sucessfully");
            // });
-        }
