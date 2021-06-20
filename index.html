@@ -16,9 +16,9 @@
 
 
 <body>
-    <p> document.getElementById('status').innerHTML =' + response.name +' ;</p>
+    <p> 'document.getElementById('status').innerHTML =' + response.name +' ;'</p>
     
-    <button onclick="FB.logout(function(response) {
+    <button type="button" class="btn btn-danger" onclick="FB.logout(function(response) {
             // Person is now logged out
          });">log out</button>
     <script src="index.js"></script>
