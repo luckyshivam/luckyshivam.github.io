@@ -16,11 +16,9 @@
 
 
 <body>
-    <p> 'document.getElementById('status').innerHTML =' + response.name +' ;'</p>
+    document.getElementById('status').innerHTML =' + response.name +' ;
     
-    <button type="button" class="btn btn-danger" onclick="FB.logout(function(response) {
-            // Person is now logged out
-         });">log out</button>
+    
     <script src="index.js"></script>
     <script src="https://apis.google.com/js/platform.js" async defer></script> <!--google signin javascript library-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
@@ -29,6 +27,16 @@
 
 
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>    <!--jquery google cdn js library-->
+    <div class="datafb">
+        <p>name</p>
+        <p id = "name" class="alert alert-success"></p>
+        <p>profile pic</p>
+        <img id="image" class="round-circle"width="100" height="100" />
+        <p>Email</p>
+        <p id="email"></p>
+        <button type="button" class="btn btn-danger" onclick="FB.logout(function(response)
+         });">log Out</button>
+        </div>
         <div class="data">
         <p>name</p>
         <p id = "name" class="alert alert-success"></p>
