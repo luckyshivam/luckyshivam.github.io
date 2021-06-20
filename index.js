@@ -65,7 +65,7 @@ function statusChangeCallback(response) {  // Called with the results from FB.ge
                 {"fields":"id,name"},
                function(response) {
       // Insert your code here
-                   alert("logged in sucessfully");
+                   alert("logged in sucessfully for: ' + response.name");
   }
 );
            // FB.api('/me', function (response) {
