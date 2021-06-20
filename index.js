@@ -17,13 +17,12 @@ function signOut() {
 
     });
   }
-function myfun(){
-var x1=document.getElementById('text').value;
+   function myfun(){
     var x1=document.getElementById('text').value;
     var x2=document.getElementById('email').value;
      alert("Name:"+x1+"\n Email:"+x2);
     
-}
+                    }
 
 function statusChangeCallback(response) {  // Called with the results from FB.getLoginStatus().
             console.log('statusChangeCallback');
