@@ -17,3 +17,11 @@ function signOut() {
 
     });
   }
+function myfun(){
+var x1=document.getElementById('text').value;
+    var x1=document.getElementById('text').value;
+    var x2=document.getElementById('email').value;
+     document.write(x1);
+     document.write(x2);
+    
+}
