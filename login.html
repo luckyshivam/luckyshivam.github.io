@@ -6,12 +6,14 @@
     console.log('Welcome!  Fetching your information.... ');
     FB.api('/me', function(response) {
       console.log('Successful login for: ' + response.name);
-      document.getElementById('status').innerHTML = 'response.name' ;
+      document.getElementById('status').innerHTML = + response.name + ;
     });
   }
 
         </script>
-        
+        <button onclick="FB.logout(function(response) {
+            // Person is now logged out
+         });"></button>
         
     </body>
 </html>
