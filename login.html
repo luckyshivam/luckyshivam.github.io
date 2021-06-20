@@ -8,6 +8,11 @@
       console.log('Successful login for: ' + response.name);
       document.getElementById('status').innerHTML =' + response.name +' ;
     });
+                function checkLoginState() {               // Called when a person is finished with the Login Button.
+    FB.getLoginStatus(function(response) {   // See the onlogin handler
+      statusChangeCallback(response);
+    });
+  }
                 window.fbAsyncInit = function() {
     FB.init({
       appId      : '476503736753362',
@@ -15,13 +20,17 @@
       xfbml      : true,                     // Parse social plugins on this webpage.
       version    : 'v2.0'           // Use this Graph API version for this call.
     });
+                    FB.getLoginStatus(function(response) {   // Called after the JS SDK has been initialized.
+      statusChangeCallback(response);        // Returns the login status.
+    });
+  };
                  
-
+</script>
         
         <button onclick="FB.logout(function(response) {
             // Person is now logged out
          });"></button>
-               </script>
+               
        
         
     </body>
