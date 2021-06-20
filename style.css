@@ -77,7 +77,7 @@ transition: 00.2s;
     }
     .right-box{
 
-    position: relative;
+    position: static;
     top: 0;
     right:0;
     box-sizing: border-box;
@@ -127,7 +127,7 @@ transition: 00.2s;
         background: #55acee;
     }
     .or{
-        position: absolute;
+        position: static;
         top: 180px;
         left: 280px;
         width: 40px;
